@@ -1,4 +1,21 @@
-
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Trirong", serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ul {
+    list-style: none;
+}
+body{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
 .header{
     top: 0;
     width: 100%;
@@ -10,17 +27,19 @@
 }
 .header img{
     height: 100%;
-    margin-left: 150px;
+    margin-left: 10%;
 }
 .header_right{
-    width: 13%;
+    width: 15%;
     height: 100%;
-    margin-right: 150px;
+    margin-right: 20%;
     float: right;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     font-size: 30px;
+}
+.header_right i{
+    margin: 0 20%;
 }
 .header_right i:hover{
     cursor: pointer;
@@ -29,10 +48,9 @@
 }
 .fixed-menu {
     position: fixed;
-    right: 0;
+    right: -10px;
     top: 0;
-    padding: 50px 0 0 50px;
-    width: 33.33%;
+    width: 400px;
     height: 100%;
     background-color: rgb(255, 255, 255);
     transform: translateX(100%);
@@ -41,22 +59,25 @@
     border-radius: 2%;
     z-index: 2;
 }
-.menu{
+.fixed-block{
+    width: 100%;
+    padding: 4vw;
+}
+.fixed-title{
     display: flex;
     width: 100%;
-    padding: 0 50px 0 0;
+    height: 30px;
     text-transform: uppercase;
     font-weight: 500;
     font-size: 20px;
     justify-content: space-between;
 }
-.menu i:hover{
+.fixed-title i:hover{
     font-size: 25px;
     color: pink;
 }
 
 .fixed-menu .primary-menu{
-    margin-top: 50px;
     font-size: 20px;
 }
 
@@ -73,6 +94,10 @@
 .menu-about{
     margin-top: 50px;
     font-size: 18px;
+}
+
+.menu-about li a {
+    display: block;
 }
 
 .fixed-menu .menu-about li{
@@ -98,6 +123,7 @@
 
 .fixed-menu .link li:hover{
     font-size:30px;
+    padding: 5px 5px;
 }
 
 .site-copyright{
@@ -106,9 +132,88 @@
     cursor: pointer;
 }
 
+.fixed-cart{
+    position: fixed;
+    right: -10px;
+    top: 0;
+    width: 400px;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    border-left: 3px solid #a0a0a0;
+    border-radius: 2%;
+    z-index: 2;
+}
 
+.list-product{
+    width: 90%;
+    padding: 30px 0;
+    border-bottom: 3px solid black;
+}
+
+.total_price{
+    margin-top: 20px;
+}
+.fixed-cart .btn{
+    width: 90%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn input{
+    width: 50%;
+    height: 45px;
+    border: 0;
+    color: white;
+    padding: 10px;
+    background-color: black;
+}
+
+.btn input:hover {
+    cursor: pointer;
+    width: 52%;
+    height: 50px;
+}
+
+.fixed-seach {
+    position: fixed;
+    right: -10px;
+    top: 0;
+    width: 400px;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    border-left: 3px solid #a0a0a0;
+    border-radius: 2%;
+    z-index: 2;
+}
+
+.fixed-seach .seach-btn{
+    width: 100%;
+    margin: 20px 0px;
+}
+
+.fixed-seach .seach-btn input{
+    width: 80%;
+    height: 35px;
+    padding-left: 5px;
+}
+
+.fixed-seach .seach-btn button{
+    margin-left: -5px;
+    width: 15%;
+    height: 35px;
+    color: white;
+    background-color: black;
+    border: 0;
+}
 
 /* content */
+
+
 
 body, html {
     height: 100%;
@@ -141,7 +246,24 @@ body, html {
 
 .right-side {
     background-color: #ffffff;
-    overflow-y: auto;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    word-spacing: 2px;  
+    font-size: 20px;
+}
+
+.right-side h1 {
+    margin-bottom: 20px;
+}
+
+.right-side h2 {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.right-side::-webkit-scrollbar {
+    display: none; /* Ẩn thanh cuộn cho Chrome, Safari, Edge */
 }
 
 .scrollable-content {
@@ -149,6 +271,83 @@ body, html {
 }
 
 
+
+
+/* contact */
+
+
+
+
+
+.contact{
+    width: 40px;
+    right: 50px;
+    bottom: 150px;
+    z-index: 10;
+    position: fixed;
+    color: white;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+}
+.contact.fadeIn {
+    animation-name: fadeIn;
+}
+
+.contact.fadeOut {
+    animation-name: fadeOut;
+}
+
+.contact i{
+    font-size: 30px;
+    background-color: pink;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 15px 0;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+}
+
+.mess{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgb(166, 166, 250);
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    z-index: 10;
+}
+
+i:hover{
+    color: rgb(91, 91, 219);
+    cursor: pointer;
+}
 
 
 /* footer */
@@ -286,7 +485,7 @@ body, html {
 
 .describe .describe-block{
     width: 25%;
-    padding: 50px 30px;
+    padding: 50px 20px;
 }
 
 
