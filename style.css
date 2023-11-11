@@ -211,34 +211,32 @@ body{
 .container{
     /* margin-top: 11%; */
     padding-top: 5px;
-    width: 100%;
+    max-width: 100%;
+    overflow: auto;
+    
 }
 
 .product{
     display: flex;
-    text-transform: uppercase;
+}
+
+.product_block{
+    margin: 50px;
+    
 }
 
 .product-left{
-    width: 50%;
+    width: 40%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.product-right{
-    width: 50%;
-}
-
-.product-right img{
-    width: 100%;
-    cursor: pointer;
-}
 
 .product-left p{
     font-size: 20px;
     margin-bottom: 50px;
-    margin-top: 50px;
+    margin-top: 15px;
     opacity: 0.9;
 }
 
@@ -387,40 +385,6 @@ body{
     cursor: pointer;
     transform: scale(1.1);
     transform-origin: center center;
-}
-
-/* content */
-
-.container {
-    display: flex;
-    height: 100%;
-    border-top: 5px solid rgb(139, 97, 97);
-}
-
-
-
-.left-side, .right-side {
-    flex: 1;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-.left-side {
-    background-color: #f0f0f0;
-    font-size: normal;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(to bottom right, #ffe0bd, #f9b3e1);
-}
-
-.right-side {
-    background-color: #ffffff;
-    overflow-y: auto;
-}
-
-.scrollable-content {
-    padding: 10px;
 }
 
 
@@ -671,4 +635,18 @@ i:hover{
 .license-right img{
     width: 150px;
 }
+
+/* ... (previous code) ... */
+
+.product {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product_block {
+    margin: 20px;
+    width: calc(20% - 40px); /* Adjust the width as needed */
+}
+
+/* ... (remaining code) ... */
 
