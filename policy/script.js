@@ -88,7 +88,6 @@ close3.addEventListener('click', function() {
 function PayPage() {
     window.location.href = "/pay/pay.html";
 }
-
 var productBlocks = document.querySelectorAll('.sample');
 
 productBlocks.forEach(function (block) {
