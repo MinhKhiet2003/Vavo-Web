@@ -2,7 +2,6 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: "Trirong", serif;
 }
 a{
     text-decoration: none;
@@ -27,19 +26,17 @@ body{
 }
 .header img{
     height: 100%;
-    margin-left: 10%;
+    margin-left: 150px;
 }
 .header_right{
-    width: 15%;
+    width: 14%;
     height: 100%;
-    margin-right: 20%;
+    margin-right: 150px;
     float: right;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     font-size: 30px;
-}
-.header_right i{
-    margin: 0 20%;
 }
 .header_right i:hover{
     cursor: pointer;
@@ -212,13 +209,20 @@ body{
 
 
 .container{
+    /* margin-top: 11%; */
     padding-top: 5px;
-    width: 100%;
+    max-width: 100%;
+    overflow: auto;
+    
 }
 
 .product{
     display: flex;
-    text-transform: uppercase;
+}
+
+.product_block{
+    margin: 50px;
+    
 }
 
 .product-left{
@@ -240,7 +244,7 @@ body{
 .product-left p{
     font-size: 20px;
     margin-bottom: 50px;
-    margin-top: 50px;
+    margin-top: 15px;
     opacity: 0.9;
 }
 
@@ -325,8 +329,6 @@ body{
     opacity: 0;
     transform: translateY(20px);
     transition: transform 0.3s ease, opacity 0.3s ease;
-    cursor: pointer;
-    z-index: 2;
 }
 
 .product-img:hover button{
@@ -341,7 +343,7 @@ body{
 }
 .price {
     display: flex;
-    margin-left: 40px;
+    margin-left: 60px;
 }
 
 .price p{
@@ -607,7 +609,7 @@ i:hover{
 
 .describe .describe-block{
     width: 25%;
-    padding: 50px 20px;
+    padding: 50px 30px;
 }
 
 
