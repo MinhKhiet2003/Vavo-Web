@@ -43,6 +43,10 @@ body{
     color: pink;
     font-size: 40px;
 }
+.block{
+    margin-left: 30px;
+    width: 700px;
+}
 .fixed-menu {
     position: fixed;
     right: -10px;
@@ -226,20 +230,12 @@ body{
 }
 
 .product-left{
-    width: 50%;
+    width: 40%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.product-right{
-    width: 50%;
-}
-
-.product-right img{
-    width: 100%;
-    cursor: pointer;
-}
 
 .product-left p{
     font-size: 20px;
@@ -644,3 +640,16 @@ i:hover{
     width: 150px;
 }
 
+/* ... (previous code) ... */
+
+.product {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product_block {
+    margin: 20px;
+    width: calc(20% - 40px); /* Adjust the width as needed */
+}
+
+/* ... (remaining code) ... */
