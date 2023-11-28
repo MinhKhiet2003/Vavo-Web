@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+}
+.content{
+    padding: 6%;
+}
+.nav-left{
+    width: 50%;
+}
+
+.nav-left a img{
+    width: 150px;
+}
+
+.path{
+    width: 100%;
+    margin: 10px 0;
+}
+
+.check-login{
+    margin: 10px 0;
+}
+
+.section{
+    width: 100%;
+}
+
+.section-content{
+    width: 100%;
+}
+
+.section-content input{
+    margin: 10px 0;
+    height: 30px;
+    padding-left: 10px;
+}
+
+.section-content input[name="hoten"]{
+    width: 100%;
+}
+
+.section-content input[name="email"]{
+    width: 60%;
+}
+
+.section-content input[name="phone"]{
+    margin-left: 1%;
+    width: 38%;
+}
+
+.section-content input[name="address"]{
+    width: 100%;
+}
+
+.radio-lable{
+    margin: 20px 0;
+    width: 100%;
+    border-radius: 2%;
+    border: 1px solid rgb(124, 124, 124);
+}
+.radio-lable-padding{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.radio-lable span{
+    margin: 0 5px;
+}
+
+.radio-lable label{
+    display: flex;
+    align-items: center;
+}
+
+.radio-lable img{
+    width: 30px;
+    margin: 0 5px;
+}
+.payment{
+    display: block;
+}
+
+.note{
+    text-align: center;
+    padding: 1.5rem;
+    white-space: pre-line;
+    background-color: beige;
+}
+
+#img_pay{
+    width: 50%;
+}
+
+.step-footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.step-footer button{
+    width: 200px;
+    height: 50px;
+    color: white;
+    border: 0;
+    border-radius: 2%;
+    background-color: rgb(0, 195, 255);
+}
+
+.footer-payment{
+    border-top: 1px solid rgb(124, 124, 124);
+    color: rgb(124, 124, 124);
+    margin-top: 80px;
+    text-align: center;
+}
+
+
+
+
+.nav-right{
+    width: 50%;
+    background-color: rgb(255, 251, 245);
+}
+
+table{
+    width: 100%;
+    border: 1;
+}
+
+table td{
+    padding-top: 10px;
+}
+
+table img{
+    width: 65px;
+    object-fit: cover;
+}
+
+.product-description{
+    padding-left: 20px;
+}
+
+.order-summary-section{
+    border-top: 1px solid rgb(124, 124, 124);
+    padding: 20px;
+}
+
+.order-summary-section input{
+    width: 60%;
+    height: 30px;
+}
+
+.order-summary-section button{
+    width: 30%;
+    margin-left: 20px;
+    height: 30px;
+    border: 0;
+    border-radius: 2%;
+    color: white;
+    background-color: black;
+}
+
+.total-line-name{
+    width: 60%;
+}
+
+.total-line-price{
+    width: 40%;
+    text-align: right;
+}
+
+.total-line{
+    border-top: 1px solid rgb(124, 124, 124);
+}
