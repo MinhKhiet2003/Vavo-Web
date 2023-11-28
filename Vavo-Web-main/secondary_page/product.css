@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+ul {
+    list-style: none;
+}
+.path{
+    width: 100%;
+    padding: 5px;
+    background-color: bisque;
+}
+
+.container{
+    width: 100%;
+    height: 1000px;
+    display: flex;
+}
+
+.nav-left{
+    width: 50%;
+    height: 100%;
+}
+.slider-container {
+    width: 100%;
+    height: 60%;
+    position: relative;
+}
+
+#image-display {
+    position: absolute;
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+.slider-container i:hover{
+    font-size: 26px;
+}
+
+i.fa-arrow-left,i.fa-arrow-right {
+    margin-top: 55%;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+}
+i.fa-arrow-right{
+    margin-left: 96%;
+}
+
+.nav-right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 5%;
+}
+
+.nav-right--block ul{
+    border-top: 1px solid rgb(150, 150, 150);
+    margin-top: 20px;
+}
+
+.nav-right--block ul li{
+    margin-top: 10px;
+}
+
+.product-price{
+    font-size: 25px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.select-color{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.input_select-color{
+    margin-left: 10%;
+}
+
+/* CSS cho radio buttons */
+.input_select-color label {
+    display: inline-block;
+    width: 80px;
+    height: 50px;
+    background-color: #eee;
+    text-align: center;
+    line-height: 50px;
+    margin: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.input_select-color input[type="radio"] {
+    display: none;
+}
+
+.input_select-color input[type="radio"] + label:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #000; /* Màu khung viền radio button chưa được chọn */
+    background-color: #fff; /* Màu nền radio button chưa được chọn */
+    border-radius: 50%; /* Để làm cho nút tròn */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.input_select-color input[type="radio"]:checked + label::before {
+    border: 2px solid #007bff; /* Màu khung viền radio button đã được chọn */
+    background-color: #007bff; /* Màu nền radio button đã được chọn */
+}
+
+
+.select-quantity{
+    margin-top: 20px;
+    display: flex
+}
+
+.custom-btn-number{
+    display: flex;
+
+}
+
+.custom-btn-number input{
+    margin: 5px 10px 0 0;
+    width: 40px;
+    height: 40px;
+    padding-left: 10px;
+}
+.gp-btn button{
+    width: 20px;
+    margin-top: 5px;
+}
+.gp-btn{
+    width: 30px;
+    display: block;
+    height: 30px;
+}
+
+.select-quantity button[type="submit"]{
+    width: 50%;
+    margin-left: 10%;
+    border: 0;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.interact{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+}
+
+.interact .btn_interact{
+    margin-left: 20px;
+    text-align: center;
+    width: 80px;
+    background-color: #007bff;
+    color: white;
+    padding: 5px;
+    border-radius: 5%;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.describe-product{
+    width: 100%;
+    margin-top: 40px;
+    display: block;
+}
+.describe-product p{
+    padding: 5px;
+}
+.describe-product input{
+    width: 100%;
+    height: 40px;
+    border: 0;
+    background-color: rgb(80, 80, 80);
+    color: white;
+    border-radius: 3%;
+    margin: 10px 0;
+    cursor: pointer;
+}
